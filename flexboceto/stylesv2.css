@@ -34,9 +34,11 @@ nav ul li{
     cursor: pointer;
     width: 100%;
     transition: 0.4s;
-    display: flex;      /*flex para organizar los textos de dento centrados tanto verticalmente como horizontal*/
-    align-items: center;        /*alineamos los textos de dentro verticalmente centrados*/
-    justify-content: center;        /*alineamos los textos de dentro horizontalmente centrados*/
+    text-align: center;
+    padding-top: 20px;
+    /*display: flex;      flex para organizar los textos de dento centrados tanto verticalmente como horizontal*/
+    /*align-items: center;        alineamos los textos de dentro verticalmente centrados*/
+    /*justify-content: center;        alineamos los textos de dentro horizontalmente centrados*/
 }
 
 nav ul li:hover{
