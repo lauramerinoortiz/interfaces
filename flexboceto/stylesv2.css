@@ -15,7 +15,8 @@ body{
 
 nav{
     background-color: #8AB7EB;
-    height: 100%;
+    /*height: 100%;         La altura cogería el 100% de la caja*/
+    height: 550px;          
     width: 250px;
     float: left;
 }
@@ -45,24 +46,23 @@ nav ul li:hover{
     background-color: #4D739E;
 }
 
-#sub li{
-    display: none;
-    transition: 0.6s;
+#sub ul li{
+    display: none;      /*ocultamos el submenu*/
 }
 
-#sub li:last-child{
+#sub ul li:last-child{
     margin-bottom: 19px;        /*Margen al ultimo li de submenu para separarlo de la opcion siguiente*/
 }
 
-#sub li:first-child{
+#sub ul li:first-child{
     margin-top: 19px;        /*Margen al primer li de submenu para separarlo de la opcion*/
 }
 
 #sub:hover li{
-    display: block;
+    display: block;         /*Cuando hacemos mouseover por la opcion ' opciones' del menu mostramos los li*/
 }
 
-#sub li:hover{
+#sub ul li:hover{
     background-color: #3b5a7e;
 }
 
@@ -93,7 +93,7 @@ nav ul li:hover{
     text-align: center;
 }
 
-.items{
+.items{     /*Caja que contiene los datos de un aticulo*/
     width: 140px;
     height: 170px;
     text-align: center;
@@ -106,8 +106,8 @@ nav ul li:hover{
     background-color: #8AB7EB;
 }
 
-.item{
-    width: 100%;
+.item{                  /*Caja que contiene la imagen para ajustarla al tamaño deseado. */
+    width: 100%;        /*Lo ideal es buscar imagenes que se ajusten al tamaño o editarlas; asi no seria necesario este div*/
     height: 80%;
     overflow: hidden;
 }
